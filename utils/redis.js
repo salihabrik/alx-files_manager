@@ -8,6 +8,7 @@ class RedisClient {
   /**
    * new RedisClient instance.
    */
+
   constructor() {
     this.client = createClient();
     this.isClientConnected = true;
