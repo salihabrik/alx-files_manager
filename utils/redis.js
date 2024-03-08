@@ -4,6 +4,7 @@ import { createClient } from 'redis';
 /**
  * Redis client.
  */
+
 class RedisClient {
   /**
    * new RedisClient instance.
