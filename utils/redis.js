@@ -44,6 +44,7 @@ class RedisClient {
    * @param {Number} duration The expiration time of the item in seconds.
    * @returns {Promise<void>}
    */
+
   async set(key, value, duration) {
     await promisify(this.client.SETEX)
       .bind(this.client)(key, duration, value);
