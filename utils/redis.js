@@ -55,6 +55,7 @@ class RedisClient {
    * @param {String} key The key of the item to remove.
    * @returns {Promise<void>}
    */
+
   async del(key) {
     await promisify(this.client.DEL).bind(this.client)(key);
   }
